@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	text-decoration: none;
+	position: relative;
+}
+
+body {
+	position: relative;
+	font-family: "Cormorant Garamond", sans-serif;
+	font-weight: 300;
+	font-size: 1.8rem;
+	background-color: rgb(209, 224, 183);
+	min-height: 100%;
+}
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
+	h1 {
+		text-align: center;
+	}
+}
+//**PROJECT STYLES**//
+section {
+	height: 100vh;
+
+	h2 {
+		text-align: center;
+	}
+}
+.project {
+	.counter {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		&__container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			color: green;
+			margin: 30px 50px;
+
+			[data-target] {
+				font-size: 5rem;
+				margin-top: 10px;
+			}
+		}
+	}
+}
